@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIROO — Smart Inventory. Stronger Bars.</title>
+<meta name="description" content="SIROO weighs every bottle and keg in your bar, so you know exactly how much you poured, sold and lost — every single night.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- ══════ NAV ══════ -->
+<div class="prog" id="prog" aria-hidden="true"></div>
+<nav class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="navLogo"><img src="assets/img/logo.jpg" alt="SIROO"></a>
+    <div class="navMid" id="navMid">
+      <a href="#features">Features</a>
+      <a href="#how">How It Works</a>
+      <a href="#kit">The Kit</a>
+      <a href="#reports">Reports</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="navEnd">
+      <button class="btn btn--wire btn--sm" data-demo>Login</button>
+      <button class="btn btn--primary btn--sm" data-demo>Book Demo</button>
+      <button class="navToggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════ HERO ══════ -->
+<header class="hero" id="top">
+  <div class="heroBg" aria-hidden="true">
+    <div class="heroBg__img" id="heroImg"></div>
+    <div class="heroBg__wash"></div>
+    <div class="heroBg__vig"></div>
+  </div>
+  <div class="wrap">
+    <div class="heroGrid">
+      <div class="heroCopy">
+        <h1 class="rv in" data-d="1">Take control of<br>every <span class="hl">bottle.</span></h1>
+        <div class="mantraRule rv in" data-d="2"></div>
+        <div class="mantra">
+          <span>Every Bottle</span>
+          <span>Every Drop</span>
+          <span>Every Time</span>
+        </div>
+        <div class="heroCtas rv in" data-d="3">
+          <button class="btn btn--primary" data-demo>Book a Demo <span class="arw">→</span></button>
+          <button class="btn btn--ghost" data-video="hero"><span class="playIcon"></span>Watch Video</button>
+        </div>
+      </div>
+
+      <div class="bottleWrap">
+        <svg class="orbitSvg" viewBox="0 0 620 620" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs>
+<linearGradient id="obR" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#d98126" stop-opacity="0"/><stop offset=".32" stop-color="#e8c259" stop-opacity=".85"/>
+<stop offset=".6" stop-color="#f7eeba" stop-opacity="1"/><stop offset="1" stop-color="#d98126" stop-opacity="0"/></linearGradient>
+<radialGradient id="obG" cx=".5" cy=".5" r=".5">
+<stop offset="0" stop-color="#d98126" stop-opacity=".34"/><stop offset=".55" stop-color="#9f3c0c" stop-opacity=".12"/>
+<stop offset="1" stop-color="#9f3c0c" stop-opacity="0"/></radialGradient>
+<filter id="obBlur"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+
+<g class="hbOrbit"><ellipse cx="310" cy="330" rx="278" ry="76" fill="none" stroke="url(#obR)" stroke-width="2.4" opacity=".9"/></g>
+<g class="hbOrbit hbOrbit2"><ellipse cx="310" cy="330" rx="234" ry="58" fill="none" stroke="url(#obR)" stroke-width="1.6" opacity=".6"/></g>
+<g class="hbOrbit hbOrbit3"><ellipse cx="310" cy="318" rx="300" ry="98" fill="none" stroke="url(#obR)" stroke-width="1.2" opacity=".38"/></g>
+<circle class="hbSpark" cx="70" cy="160" r="3.4" fill="#f7eeba" style="animation-delay:0s"/>
+<circle class="hbSpark" cx="548" cy="230" r="2.6" fill="#e8c259" style="animation-delay:1.4s"/>
+<circle class="hbSpark" cx="46" cy="430" r="3" fill="#e8c259" style="animation-delay:2.6s"/>
+<circle class="hbSpark" cx="574" cy="470" r="3.4" fill="#f7eeba" style="animation-delay:.8s"/>
+<circle class="hbSpark" cx="122" cy="72" r="2.2" fill="#d98126" style="animation-delay:3.4s"/>
+<circle class="hbSpark" cx="500" cy="98" r="2.8" fill="#f7eeba" style="animation-delay:2s"/>
+<circle class="hbSpark" cx="30" cy="300" r="2.2" fill="#d98126" style="animation-delay:4.2s"/>
+<circle class="hbSpark" cx="590" cy="352" r="2.6" fill="#e8c259" style="animation-delay:1.1s"/>
+</svg>
+
+        <div class="bottlePhoto" role="img" aria-label="SIROO whisky bottle"></div>
+        <div class="statCard sc1">
+          <span class="lbl">Inventory Accuracy</span>
+          <b><span data-count="99">0</span>%</b>
+          <span class="delta"><em>+12%</em> vs last month</span>
+          <svg class="spk" viewBox="0 0 88 46"><polyline points="2,40 14,32 24,36 36,25 46,29 58,17 70,21 85,5"/><circle cx="85" cy="5" r="3.4"/></svg>
+        </div>
+        <div class="statCard sc2">
+          <span class="lbl">Reduced Losses</span>
+          <b><span data-count="25">0</span>%</b>
+          <span class="delta"><em>&minus;18%</em> vs last month</span>
+          <svg class="spk" viewBox="0 0 88 46"><polyline points="2,38 14,34 24,27 36,31 46,21 58,23 70,12 85,4"/><circle cx="85" cy="4" r="3.4"/></svg>
+        </div>
+        <div class="statCard sc3">
+          <span class="lbl">Faster Reporting</span>
+          <b><span data-count="80">0</span>%</b>
+          <span class="delta"><em class="up">+37%</em> vs last month</span>
+          <svg class="spk" viewBox="0 0 88 46"><polyline points="2,40 14,35 24,29 36,19 46,23 58,15 70,17 85,4"/><circle cx="85" cy="4" r="3.4"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ══════ FEATURES ══════ -->
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="panel">
+      <div class="shead rv">
+        <h2>Built For Modern Hospitality</h2>
+        <span class="uline"></span>
+        <p class="lede" style="margin-top:16px">Bars, brewpubs, hotels and multi-outlet groups — counted properly, every night.</p>
+      </div>
+      <div class="featGrid">
+        <div class="featCard rv">
+          <div class="featImgWrap">
+            <div class="featImg" style="background-image:url('assets/img/feature-reduce-leakage.jpg')"></div>
+            <div class="featBadge"><svg viewBox="0 0 24 24" fill="none"><path d="M9 2h6v6c0 2 4 4 4 8v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6c0-4 4-6 4-8V2z" stroke="currentColor" stroke-width="1.7"/><path d="M5 16h14" stroke="currentColor" stroke-width="1.7"/></svg></div>
+          </div>
+          <div class="featBody">
+            <h3>Reduce Inventory Leakage</h3>
+            <p>Every open bottle measured to the millilitre instead of estimated. Track each pour and transfer, and spot discrepancies before they reach your margin.</p>
+          </div>
+        </div>
+        <div class="featCard rv" data-d="1">
+          <div class="featImgWrap">
+            <div class="featImg" style="background-image:url('assets/img/feature-realtime-visibility.jpg')"></div>
+            <div class="featBadge"><svg viewBox="0 0 24 24" fill="none"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/></svg></div>
+          </div>
+          <div class="featBody">
+            <h3>Real-Time Visibility</h3>
+            <p>Stock, consumption and value across every outlet and bar — on screen the moment a count is saved, not the morning after someone types it up.</p>
+          </div>
+        </div>
+        <div class="featCard rv" data-d="2">
+          <div class="featImgWrap">
+            <div class="featImg" style="background-image:url('assets/img/feature-smarter-operations.jpg')"></div>
+            <div class="featBadge"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+          </div>
+          <div class="featBody">
+            <h3>Smarter Operations</h3>
+            <p>Kegs, pre-batched cocktails and stock-room transfers all run through one system, with wastage recorded by reason instead of buried in the shortfall.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ DASHBOARD ══════ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="panel rv">
+      <div class="dashGrid">
+        <div>
+          <p class="eyebrow">Powerful Dashboard</p>
+          <h2 style="margin:14px 0 14px">Everything You Need,<br>Right Where You Need It.</h2>
+          <p class="lede">Live figures, clear variance and reports you can actually act on — across one bar or fifteen.</p>
+          <ul class="checkList">
+            <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M6 10.5l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Live inventory across every outlet</li>
+            <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M6 10.5l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Consumption priced at your cost</li>
+            <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M6 10.5l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Low stock and variance alerts</li>
+            <li><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M6 10.5l2.6 2.6L14 7.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>Full audit trail with staff logins</li>
+          </ul>
+          <button class="btn btn--primary" data-demo>Explore Features <span class="arw">→</span></button>
+        </div>
+
+        <div class="dash" id="dash">
+          <aside class="dashSide">
+            <div class="dashLogo">SIROO</div>
+            <nav class="dashNav">
+              <a class="on"><i></i>Dashboard</a><a><i></i>Inventory</a><a><i></i>Consumption</a>
+              <a><i></i>Kegs</a><a><i></i>Reports</a><a><i></i>Settings</a>
+            </nav>
+          </aside>
+          <div class="dashMain">
+            <div class="dashTop">
+              <h4>Dashboard</h4>
+              <div class="dashUser"><i></i>Main Bar</div>
+            </div>
+            <div class="dashKpis">
+              <div class="dashKpi"><span>Poured today</span><b data-count="1825" data-suffix=" ml">0</b><em>▲ 8.2% vs yesterday</em></div>
+              <div class="dashKpi"><span>Stock value</span><b data-count="8.42" data-dec="2" data-prefix="₹" data-suffix="L">0</b><em>▲ 12.5% vs last wk</em></div>
+              <div class="dashKpi"><span>Active outlets</span><b data-count="12">0</b><em>All operational</em></div>
+              <div class="dashKpi"><span>Low stock</span><b data-count="23">0</b><em class="warn">Needs attention</em></div>
+            </div>
+            <div class="dashRow">
+              <div class="dashBox">
+                <h5>Consumption Overview</h5>
+                <svg class="spark" viewBox="0 0 260 104" preserveAspectRatio="none">
+                  <defs><linearGradient id="dashFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#d98126" stop-opacity=".42"/><stop offset="1" stop-color="#d98126" stop-opacity="0"/>
+                  </linearGradient></defs>
+                  <polygon class="sparkArea" id="sparkArea" points="8,86 46,62 84,70 122,40 160,52 198,24 252,34 252,98 8,98"/>
+                  <polyline class="sparkLine" id="sparkLine" points="8,86 46,62 84,70 122,40 160,52 198,24 252,34"/>
+                </svg>
+              </div>
+              <div class="dashBox">
+                <h5>Top Categories</h5>
+                <div class="donutWrap">
+                  <svg class="donut" viewBox="0 0 42 42" id="donut">
+                    <circle cx="21" cy="21" r="15.9" stroke="#d98126" data-pct="45"/>
+                    <circle cx="21" cy="21" r="15.9" stroke="#e8c259" data-pct="25"/>
+                    <circle cx="21" cy="21" r="15.9" stroke="#c2621a" data-pct="15"/>
+                    <circle cx="21" cy="21" r="15.9" stroke="#8a3a0a" data-pct="10"/>
+                    <circle cx="21" cy="21" r="15.9" stroke="#4a2410" data-pct="5"/>
+                  </svg>
+                  <div class="legend">
+                    <div><i style="background:#d98126"></i>Whisky<b>45%</b></div>
+                    <div><i style="background:#e8c259"></i>Beer<b>25%</b></div>
+                    <div><i style="background:#c2621a"></i>Vodka<b>15%</b></div>
+                    <div><i style="background:#8a3a0a"></i>Gin<b>10%</b></div>
+                    <div><i style="background:#4a2410"></i>Others<b>5%</b></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ HOW IT WORKS ══════ -->
+<section class="section" id="how" style="padding-top:0">
+  <div class="wrap">
+    <div class="shead rv">
+      <p class="eyebrow">How It Works</p>
+      <h2>Set the bottle down. Read what's left.</h2>
+      <span class="uline"></span>
+    </div>
+    <div class="howGrid">
+      <div class="bottleStage rv">
+        <div class="bottle3d">
+          <div class="hiwStack">
+            <div class="hiwFull" aria-hidden="true"></div>
+            <div class="hiwEmpty" id="hiwEmpty" aria-hidden="true"></div>
+            <div class="hiwLine" id="hiwLine"></div>
+          </div>
+          <svg style="display:none" width="176" height="360" viewBox="0 0 176 360" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="gGlass" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#3a2410" stop-opacity=".95"/><stop offset=".26" stop-color="#8a5a26" stop-opacity=".5"/>
+                <stop offset=".5" stop-color="#ffdfb0" stop-opacity=".22"/><stop offset=".78" stop-color="#8a5a26" stop-opacity=".5"/>
+                <stop offset="1" stop-color="#2a1a0b" stop-opacity=".95"/>
+              </linearGradient>
+              <linearGradient id="gLiq" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#b8620f"/><stop offset=".3" stop-color="#d98126"/>
+                <stop offset=".55" stop-color="#e8c259"/><stop offset="1" stop-color="#a8560d"/>
+              </linearGradient>
+              <clipPath id="cBody"><path d="M56 84c0 16-30 30-30 62v182a16 16 0 0 0 16 16h92a16 16 0 0 0 16-16V146c0-32-30-46-30-62V36H56v48z"/></clipPath>
+            </defs>
+            <g clip-path="url(#cBody)"><rect id="liq" x="18" y="344" width="140" height="0" fill="url(#gLiq)"/></g>
+            <path d="M56 84c0 16-30 30-30 62v182a16 16 0 0 0 16 16h92a16 16 0 0 0 16-16V146c0-32-30-46-30-62V36H56v48z" fill="url(#gGlass)" stroke="rgba(217,129,38,.55)" stroke-width="2"/>
+            <rect x="56" y="20" width="64" height="20" rx="5" fill="#1a0f06" stroke="rgba(217,129,38,.5)" stroke-width="2"/>
+            <rect x="52" y="6" width="72" height="20" rx="6" fill="#2b1a0a" stroke="rgba(232,194,89,.55)" stroke-width="2"/>
+            <rect x="44" y="196" width="88" height="72" rx="6" fill="rgba(10,5,2,.86)" stroke="rgba(232,194,89,.34)" stroke-width="1.4"/>
+            <text x="88" y="224" text-anchor="middle" font-family="Cinzel,serif" font-size="13" letter-spacing="3" fill="#e8c259">SIROO</text>
+            <line x1="62" y1="234" x2="114" y2="234" stroke="rgba(232,194,89,.4)" stroke-width="1"/>
+            <text id="lblName" x="88" y="252" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" letter-spacing=".5" fill="rgba(232,200,154,.75)">SINGLE MALT</text>
+            <rect x="46" y="112" width="7" height="216" rx="3.5" fill="#fff3e0" opacity=".16"/>
+            <g clip-path="url(#cBody)">
+              <rect id="liqLine" x="18" y="341" width="140" height="2.5" fill="#ffe6b8" opacity=".9"/>
+              <ellipse id="liqTop" cx="88" cy="344" rx="70" ry="6" fill="#ffd98a" opacity=".5"/>
+            </g>
+          </svg>
+        </div>
+        <div class="readout">
+          <span>Remaining</span>
+          <b><span id="mlOut">0</span><em>ML</em></b>
+          <div class="readoutBrand" id="bName">Glenfiddich 12</div>
+          <div class="readoutMeta" id="bMeta">750 ML bottle · Main Bar</div>
+        </div>
+        <div class="pourTag"><span>Poured since last count</span><b><span id="pourOut">0</span> ML</b></div>
+      </div>
+
+      <ol class="stepList rv" data-d="1">
+        <li class="stepItem"><span class="stepNo">01</span>
+          <div><h3>Scan the bottle</h3><p>One pull of the scanner brings up the right brand — no scrolling a list of four hundred bottles at closing time.</p></div></li>
+        <li class="stepItem"><span class="stepNo">02</span>
+          <div><h3>Set it on the scale</h3><p>SIROO already knows the empty bottle weight and the spirit density, so it turns the reading straight into millilitres. Your team never sees a gram or does a conversion.</p></div></li>
+        <li class="stepItem"><span class="stepNo">03</span>
+          <div><h3>Read what's left, and what went</h3><p>Remaining volume, poured since the last count, and the value attached — saved against that bar, that night, that person.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ VIDEO BAND ══════ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="videoBand rv">
+      <div class="videoBand__bg" id="vidBg" aria-hidden="true"></div>
+      <div class="videoBand__wash" aria-hidden="true"></div>
+      <div class="videoBand__in">
+        <button class="playBig" data-video="action" aria-label="Watch SIROO in action"></button>
+        <h3>Watch SIROO In Action</h3>
+        <p>One full count, start to finish — scan, weigh, and watch the value land in the report.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ STAT STRIP ══════ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="statStrip rv">
+      <img src="assets/img/stats-strip.jpg" alt="±2 ML measurement accuracy · 12 s per bottle counted · 3 hrs saved per full stocktake · 100% of entries logged and traceable · 1 box with scale and scanner included" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ══════ KIT ══════ -->
+<section class="section" id="kit" style="padding-top:0">
+  <div class="wrap">
+    <div class="shead rv">
+      <p class="eyebrow">What Arrives</p>
+      <h2>The software is half of it. This is the other half.</h2>
+      <span class="uline"></span>
+      <p class="lede" style="margin-top:16px">Software alone can only ask your staff to guess more neatly. SIROO ships with the hardware that removes the guess — calibrated, paired, and ready the moment you open the box.</p>
+    </div>
+    <div class="tilt rv" data-d="1"><div class="tiltIn" data-tilt>
+      <img src="assets/img/kit-box-closed.jpg" alt="The SIROO box — Smart Inventory. Stronger Bars." loading="lazy">
+    </div></div>
+    <div class="kitPair">
+      <div class="tilt rv" data-d="1"><div class="tiltIn" data-tilt>
+        <img src="assets/img/kit-box-open.jpg" alt="SIROO barcode scanner and weighing scale inside the box" loading="lazy">
+        <span class="kitCap">Scanner + Weighing Scale</span>
+      </div></div>
+      <div class="tilt rv" data-d="2"><div class="tiltIn" data-tilt>
+        <img src="assets/img/kit-box-angle.jpg" alt="The SIROO kit, angled view" loading="lazy">
+        <span class="kitCap">Paired and calibrated</span>
+      </div></div>
+    </div>
+    <div class="hwGrid">
+      <div class="rv">
+        <h2 style="font-size:clamp(1.45rem,2.5vw,1.95rem);margin-bottom:10px">One box. Nothing else to buy.</h2>
+        <p class="lede">Unbox it, connect it, and count your first bottle the same evening.</p>
+      </div>
+      <ul class="kitList rv" data-d="1">
+        <li><svg class="tick" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span><b>Precision weighing scale</b>Reads to the gram with tare built in, so a bottle becomes millilitres without anyone converting anything.</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span><b>Barcode scanner</b>Brings up the right bottle instantly — no scrolling a list of four hundred brands mid-count.</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span><b>Pre-loaded bottle database</b>Brands, sizes and barcodes are already in the system. Add your prices and start counting.</span></li>
+        <li><svg class="tick" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span><b>Setup and staff training</b>We configure your outlets, bars and stock rooms with you, and train the team that will use it nightly.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="rails" aria-hidden="true">
+  <div class="rail"><div class="railTrack"></div></div>
+</div>
+
+<!-- ══════ KEG ══════ -->
+<section class="section" style="padding-top:clamp(40px,5vw,64px)">
+  <div class="wrap">
+    <div class="panel rv">
+      <div class="kegInner">
+        <div class="kegCopy">
+          <p class="eyebrow">Draft Beer</p>
+          <h2>The stock most systems can't count.</h2>
+          <p>A keg can't be eyeballed, and by the time it blows you've already lost the record of what came out of it. SIROO registers each keg as its own asset — capacity, tare weight, which bars it feeds — then tracks it to closure.</p>
+          <p>At each count you enter one number: the current weight. SIROO works out what's left, what was poured, and prompts for wastage. Record sales by serve and the variance is calculated for you.</p>
+          <div class="chips">
+            <span class="chip">Wastage by reason</span><span class="chip">Multi-bar keg lines</span>
+            <span class="chip">Declare empty + final wastage</span><span class="chip">Full lifecycle history</span>
+          </div>
+        </div>
+        <div class="kegPanel">
+          <div class="tapWrap"><svg class="tapArt" viewBox="0 0 300 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<linearGradient id="tChrome" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#2b1a0a"/><stop offset=".2" stop-color="#8a5c24"/><stop offset=".44" stop-color="#e8c259"/>
+<stop offset=".56" stop-color="#f7eeba"/><stop offset=".76" stop-color="#c2621a"/><stop offset="1" stop-color="#241608"/></linearGradient>
+<linearGradient id="tChromeH" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#8a5c24"/><stop offset=".3" stop-color="#f7eeba"/><stop offset=".6" stop-color="#d98126"/><stop offset="1" stop-color="#3a2210"/></linearGradient>
+<linearGradient id="tBeer" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#e8c259"/><stop offset="1" stop-color="#c2621a"/></linearGradient>
+<linearGradient id="tGl" x1="0" y1="0" x2="1" y2="0">
+<stop offset="0" stop-color="#f0dcb4" stop-opacity=".14"/><stop offset=".45" stop-color="#f7ecd6" stop-opacity=".32"/>
+<stop offset="1" stop-color="#f0dcb4" stop-opacity=".14"/></linearGradient>
+<clipPath id="tGlassClip"><path d="M98,160 L104,276 a7,7 0 0 0 7,6 h30 a7,7 0 0 0 7,-6 L154,160 Z"/></clipPath>
+</defs><ellipse cx="130" cy="292" rx="120" ry="10" fill="#d98126" opacity=".10"/><g opacity=".5"><rect x="56" y="75" width="26" height="10" rx="5" fill="url(#tChromeH)"/><rect x="70" y="62" width="22" height="32" rx="7" fill="url(#tChrome)"/><rect x="77" y="92" width="8" height="20" rx="4" fill="url(#tChrome)"/><rect x="78" y="36" width="6" height="28" rx="3" fill="url(#tChromeH)"/><path d="M73,12 h16 v16 a8,8 0 0 1 -8,8 a8,8 0 0 1 -8,-8 Z" fill="#241408" stroke="rgba(232,194,89,.5)" stroke-width="1.4"/></g><path d="M26,272 L28,58 a18,18 0 0 1 36,0 L66,272 Z" fill="url(#tChrome)"/><rect x="24" y="258" width="44" height="13" rx="6" fill="url(#tChromeH)"/><rect x="25" y="150" width="42" height="9" rx="4.5" fill="#f7eeba" opacity=".3"/><ellipse cx="46" cy="46" rx="19" ry="7.5" fill="url(#tChromeH)"/><ellipse cx="46" cy="44" rx="11" ry="4" fill="#f7eeba" opacity=".6"/><rect x="35" y="62" width="5" height="200" rx="2.5" fill="#f7eeba" opacity=".28"/><rect x="60" y="105" width="54" height="14" rx="7" fill="url(#tChromeH)"/><rect x="108" y="88" width="36" height="46" rx="11" fill="url(#tChrome)"/><rect x="112" y="95" width="6" height="33" rx="3" fill="#f7eeba" opacity=".42"/><rect x="119.5" y="132" width="13" height="20" rx="6" fill="url(#tChrome)"/><ellipse cx="126" cy="151" rx="8" ry="3.2" fill="url(#tChromeH)"/><rect x="122" y="50" width="8" height="42" rx="4" fill="url(#tChromeH)"/><circle cx="126" cy="50" r="7.5" fill="url(#tChromeH)"/><path d="M114,10 h24 v26 a12,12 0 0 1 -12,12 a12,12 0 0 1 -12,-12 Z" fill="#241408" stroke="rgba(232,194,89,.62)" stroke-width="1.6"/><rect x="118" y="20" width="16" height="2.6" rx="1.3" fill="#e8c259" opacity=".65"/><rect x="118" y="27" width="16" height="2.6" rx="1.3" fill="#e8c259" opacity=".42"/><rect class="pourStream" x="122" y="151" width="8" height="0" rx="4" fill="url(#tBeer)" opacity=".92"/><g clip-path="url(#tGlassClip)"><rect class="beerFill" x="96" y="282" width="60" height="0" fill="url(#tBeer)"/><rect class="beerHead" x="96" y="282" width="60" height="0" fill="#f7ecd6" opacity=".92"/><circle class="bub" cx="110" cy="272" r="2.6" fill="#f7ecd6" opacity=".55" style="animation-duration:3.1s;animation-delay:0s"/><circle class="bub" cx="120" cy="272" r="2" fill="#f7ecd6" opacity=".55" style="animation-duration:3.8s;animation-delay:0.7s"/><circle class="bub" cx="132" cy="272" r="2.8" fill="#f7ecd6" opacity=".55" style="animation-duration:3.4s;animation-delay:1.3s"/><circle class="bub" cx="142" cy="272" r="2.2" fill="#f7ecd6" opacity=".55" style="animation-duration:4.2s;animation-delay:0.5s"/><circle class="bub" cx="126" cy="272" r="1.8" fill="#f7ecd6" opacity=".55" style="animation-duration:3.6s;animation-delay:1.9s"/><circle class="bub" cx="116" cy="272" r="2.4" fill="#f7ecd6" opacity=".55" style="animation-duration:3.9s;animation-delay:2.4s"/></g><path d="M98,160 L104,276 a7,7 0 0 0 7,6 h30 a7,7 0 0 0 7,-6 L154,160 Z" fill="url(#tGl)" stroke="rgba(240,220,180,.55)" stroke-width="2"/><path d="M154,178 h16 a13,13 0 0 1 0,40 h-13" fill="none" stroke="rgba(240,220,180,.5)" stroke-width="5.5" stroke-linecap="round"/><rect x="106" y="172" width="4.5" height="96" rx="2.2" fill="#f7ecd6" opacity=".2"/><rect x="16" y="272" width="190" height="13" rx="5" fill="#1a1108" stroke="rgba(232,194,89,.28)" stroke-width="1"/><rect x="16" y="272" width="190" height="2" fill="#e8a655" opacity=".42"/></svg></div>
+          <span class="kegTitle">Keg 2 · Hazy Valley IPA</span>
+          <div class="serveRow"><span class="nm">Glass</span><span class="ml">330 ML</span><span class="qty">25</span></div>
+          <div class="serveRow"><span class="nm">Pitcher</span><span class="ml">1500 ML</span><span class="qty">5</span></div>
+          <div class="serveRow"><span class="nm">Tower</span><span class="ml">3000 ML</span><span class="qty">1</span></div>
+          <div class="serveTot"><span>Sold this cycle</span><b>18,750 ML</b></div>
+          <div class="serveTot" style="border-top:0;padding-top:6px;margin-top:2px"><span>Sales value</span><b>₹ 12,450</b></div>
+          <div class="serveTot" style="border-top:0;padding-top:6px;margin-top:2px"><span>Unaccounted pour</span><b style="color:var(--ember)">1,392 ML</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ REPORTS ══════ -->
+<section class="section" id="reports" style="padding-top:0">
+  <div class="wrap">
+    <div class="shead rv">
+      <p class="eyebrow">Reports</p>
+      <h2>The number you actually wanted.</h2>
+      <span class="uline"></span>
+      <p class="lede" style="margin-top:16px">Filter by outlet, bar, brand and date. Read it on screen or take the whole thing to CSV.</p>
+    </div>
+    <div class="panel rv" data-d="1" style="border:1px solid var(--line);border-radius:18px;overflow:hidden;background:rgba(8,4,1,.72)">
+      <div class="repBar"><i></i><i></i><i></i><strong>Consumption &amp; Variance · Main Bar · This week</strong></div>
+      <div class="repScroll">
+        <table class="repTable">
+          <thead><tr><th>Brand</th><th>Opening</th><th>Closing</th><th>Consumed</th><th>Value</th><th>Variance</th></tr></thead>
+          <tbody>
+            <tr><td class="brand">Glenfiddich 12</td><td class="num">7 × 750 + 400</td><td class="num">5 × 750 + 220</td><td class="num">1,680 ML</td><td class="num">₹ 6,720</td><td class="num pos">On target</td></tr>
+            <tr><td class="brand">Tanqueray</td><td class="num">4 × 750 + 610</td><td class="num">3 × 750 + 120</td><td class="num">1,240 ML</td><td class="num">₹ 4,340</td><td class="num neg">−180 ML</td></tr>
+            <tr><td class="brand">Hazy Valley IPA (Keg 2)</td><td class="num">21,500 ML</td><td class="num">9,208 ML</td><td class="num">12,292 ML</td><td class="num">₹ 12,450</td><td class="num neg">−1,392 ML</td></tr>
+            <tr><td class="brand">Espresso Martini (batch)</td><td class="num">2,400 ML</td><td class="num">900 ML</td><td class="num">1,500 ML</td><td class="num">₹ 5,250</td><td class="num pos">On target</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="repNote">Illustrative figures. Every row links back to the count that produced it, and who recorded it.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ TESTIMONIALS ══════ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="shead rv"><h2>Loved By Hospitality Leaders</h2><span class="uline"></span></div>
+    <div class="tGrid">
+      <div class="tCard rv"><span class="qm">&ldquo;</span>
+        <p>SIROO changed how we manage beverage inventory. The accuracy is the part that surprised everyone — there's no arguing with a weight.</p>
+        <div class="tWho"><i>RM</i><div><b>Rahul Mehta</b><span>Bar Manager</span></div></div></div>
+      <div class="tCard rv" data-d="1"><span class="qm">&ldquo;</span>
+        <p>Discrepancies dropped sharply in the first month. More importantly, we could finally point at which night and which bar they came from.</p>
+        <div class="tWho"><i>AS</i><div><b>Anita Sharma</b><span>Operations Head</span></div></div></div>
+      <div class="tCard rv" data-d="2"><span class="qm">&ldquo;</span>
+        <p>The reporting saves us hours every week. For anyone running more than one outlet, it's hard to go back to a notebook after this.</p>
+        <div class="tWho"><i>VS</i><div><b>Vikram Singh</b><span>Director</span></div></div></div>
+    </div>
+    <p style="text-align:center;font-size:12px;color:rgba(232,200,154,.35);margin-top:22px">Replace with your own customer quotes before publishing.</p>
+  </div>
+</section>
+
+<!-- ══════ FAQ ══════ -->
+<section class="section" id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="shead rv"><p class="eyebrow">Questions</p><h2>Before you book</h2><span class="uline"></span></div>
+    <div class="faq">
+      <div class="qa rv"><button><span>Do I need the weighing scale, or can I use my own?</span><span class="pm"></span></button>
+        <div class="ans"><p>The scale ships with SIROO, already calibrated and paired, and we'd recommend using it — it's the part that makes the measurement trustworthy. If you already run compatible hardware, raise it on the demo call and we'll tell you honestly whether it will work.</p></div></div>
+      <div class="qa rv"><button><span>How long does setup take?</span><span class="pm"></span></button>
+        <div class="ans"><p>Most single outlets are counting the same day. We configure your outlets, bars and stock rooms with you, load your brands and prices, and train the staff who will use it nightly. Multi-outlet groups take longer, mainly because there are more people to train.</p></div></div>
+      <div class="qa rv"><button><span>Do my staff need to be technical?</span><span class="pm"></span></button>
+        <div class="ans"><p>No. The nightly job is scan, weigh, save. Everything that could be calculated is calculated. The screens your bar team touch are deliberately narrow — reporting and settings sit behind separate logins.</p></div></div>
+      <div class="qa rv"><button><span>Does it work across multiple outlets?</span><span class="pm"></span></button>
+        <div class="ans"><p>Yes. Each outlet has its own stock rooms and bars, stock is assigned and transferred between them, and reporting works at either level — one bar on one night, or every outlet across a quarter.</p></div></div>
+      <div class="qa rv"><button><span>What about draft beer?</span><span class="pm"></span></button>
+        <div class="ans"><p>Kegs are a first-class part of the system, not an afterthought. Each keg is registered with its capacity and full weight, assigned to the bars it feeds, weighed at each count, and closed out with a final wastage figure. Sales are recorded by glass, pitcher and tower.</p></div></div>
+      <div class="qa rv"><button><span>What does it cost?</span><span class="pm"></span></button>
+        <div class="ans"><p>Pricing depends on how many outlets and bars you run and how much hardware you need, so we quote it properly rather than posting a number that would be wrong for most people. Book a demo and you'll have a figure on the call.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ CTA ══════ -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="ctaBanner rv">
+      <div class="ctaBanner__bg" aria-hidden="true"></div>
+      <div>
+        <h2>Ready To Take Control Of Your Bar?</h2>
+        <p>Twenty minutes. We'll weigh a bottle from your bar and show you the variance it finds.</p>
+      </div>
+      <button class="btn btn--primary" data-demo>Request Demo Today <span class="arw">→</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FOOTER ══════ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="footGrid">
+      <div class="footBrand">
+        <img src="assets/img/logo.jpg" alt="SIROO">
+        <p>Hospitality intelligence for bars, brewpubs and multi-outlet groups.</p>
+        <div class="footSocial">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 3.5A1.5 1.5 0 1 1 5 6.5a1.5 1.5 0 0 1 0-3zM3.5 8h3v12h-3V8zm5.5 0h2.9v1.6h.1c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.6 2 3.6 4.6V20h-3v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V20H9V8z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2c-.2-.9-.9-1.6-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.8c.2.9.9 1.6 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5 3-5 3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footCol"><h4>Product</h4>
+        <a href="#features">Features</a><a href="#how">How It Works</a><a href="#kit">The Kit</a><a href="#reports">Reports</a></div>
+      <div class="footCol"><h4>Company</h4>
+        <a href="#faq">FAQ</a><a href="#" data-demo>Contact Us</a><a href="#" data-demo>Book a Demo</a><a href="#" data-demo>Support</a></div>
+      <div class="footCol news"><h4>Stay Updated</h4>
+        <p>Occasional notes on inventory, wastage and running a tighter bar.</p>
+        <div class="newsForm">
+          <input type="email" id="newsEmail" placeholder="Enter your email" aria-label="Email">
+          <button id="newsBtn" aria-label="Subscribe">→</button>
+        </div>
+      </div>
+    </div>
+    <div class="footBase">© <span id="yr">2026</span> SIROO. All rights reserved. · Smart Inventory. Stronger Bars.</div>
+  </div>
+</footer>
+
+<!-- ══════ MODALS ══════ -->
+<div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="demoTitle">
+  <div class="mBox">
+    <div id="demoForm">
+      <div class="mHead"><h3 id="demoTitle">Book a demo</h3><button class="mClose" data-close aria-label="Close">×</button></div>
+      <p class="mSub">Tell us where you are and we'll come to you with the kit.</p>
+      <div class="field"><label for="f-name">Your name</label><input id="f-name" type="text" placeholder="Full name" autocomplete="name"></div>
+      <div class="field"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" type="tel" placeholder="+91" autocomplete="tel"></div>
+      <div class="field"><label for="f-outlet">Outlet name</label><input id="f-outlet" type="text" placeholder="Bar, pub or restaurant name"></div>
+      <div class="row2">
+        <div class="field"><label for="f-count">Number of outlets</label>
+          <select id="f-count"><option>1</option><option>2 – 5</option><option>6 – 15</option><option>15+</option></select></div>
+        <div class="field"><label for="f-city">City</label><input id="f-city" type="text" placeholder="City"></div>
+      </div>
+      <div class="mBtns">
+        <p id="demoErr" style="display:none;color:#ff7043;font-size:13px;margin:0 0 4px"></p>
+        <button class="btn btn--primary" id="sendDemo">Request my demo</button>
+        <div class="orLine">or</div>
+        <!-- Replace 91XXXXXXXXXX with your WhatsApp business number -->
+        <a class="btn btn--wa" id="waLink" href="#" target="_blank" rel="noopener">Message us on WhatsApp</a>
+      </div>
+    </div>
+    <div id="demoDone" style="display:none">
+      <div class="okMsg"><i>✓</i><h3>Request received</h3><p>We'll be in touch within one working day to fix a time.</p></div>
+      <button class="btn btn--ghost" data-close style="width:100%">Close</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="vidTitle">
+  <div class="mBox mBox--wide">
+    <div class="mHead" style="padding:6px 8px 12px"><h3 id="vidTitle">How SIROO works</h3><button class="mClose" data-close aria-label="Close">×</button></div>
+    <!-- filled at runtime from the VIDEOS config in assets/js/main.js -->
+    <div class="vidFrame" id="vidFrame"></div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
